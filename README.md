@@ -1,1 +1,1 @@
-# PersonalWebsite
+1. Setup with vite react
