@@ -2,6 +2,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        logo: ["Playfair Display", "serif"],
+        roboto: ["Roboto", " sans-serif"],
+      },
+
       width: {
         150: "150px",
         190: "190px",
