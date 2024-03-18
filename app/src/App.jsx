@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Projects from "./components/Projects";
 import Biography from "./components/Biography";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <HeroSection />
       <Projects />
       <Biography />
+      <Footer />
     </div>
   );
 }
