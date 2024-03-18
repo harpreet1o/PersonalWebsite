@@ -31,4 +31,21 @@ jobs:
         working-directory: app  # Change working directory to your app directory
 
       - name: Build
-  
+        run: npm run build
+        working-directory: app  # Change working directory to your app directory
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2  # Use upload-artifact action
+        with:
+          name: Build artifacts
+          path: app/dist  # Adjusted path to match the build output location
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: app/dist  # Adjusted path to match the build output location
