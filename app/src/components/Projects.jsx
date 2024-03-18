@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 
 function Projects() {
   return (
-    <div className="p-6">
+    <div className="p-6 mb-40">
       <div className="px-6 bg-white text-black mb-20">
         <p className="text-xl text-blue mb-4">Projects</p>
         <p className="text-2xl ">Latest Projects---</p>
@@ -31,8 +31,8 @@ function Projects() {
             add new songs. For playing of songs external library is used
             audioplayer5 is used.
           </p>
-          <div className="text-lg flex items-center text-white font-semibold py-2 px-4 rounded-full bg-black transition duration-300 ease-in-out hover:bg-blue max-w-40">
-            <span>Code Link</span>
+          <div className="text-lg justify-between cursor-pointer flex items-center text-white font-semibold py-2 px-4 rounded-full bg-black transition duration-300 ease-in-out hover:bg-blue max-w-40">
+            <span>Code</span>
             <FaGithub className="inline" />
           </div>
         </div>
@@ -50,8 +50,8 @@ function Projects() {
             adminpage The admin page has two pages when to add the item and
             other to delete the items.
           </p>
-          <div className="text-lg flex items-center text-white font-semibold py-2 px-4 rounded-full bg-black transition duration-300 ease-in-out hover:bg-blue max-w-40">
-            <span>Code Link</span>
+          <div className="text-lg flex justify-between cursor-pointer items-center text-white font-semibold py-2 px-4 rounded-full bg-black transition duration-300 ease-in-out hover:bg-blue max-w-40">
+            <span>Code </span>
             <FaGithub className="inline" />
           </div>
         </div>
