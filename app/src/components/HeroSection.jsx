@@ -12,7 +12,7 @@ function HeroSection() {
             stack. Consistently working on new projects. As learning is a never
             ending process...
           </p>
-          <div className="flex gap-2">
+          <div className="flex gap-4 items-center mb-4">
             <button className=" text-black font-semibold text-lg py-2 px-4 rounded-full bg-white transition duration-300 ease-in-out hover:bg-blue">
               Projects
             </button>
