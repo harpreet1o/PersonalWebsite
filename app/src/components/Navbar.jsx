@@ -1,23 +1,25 @@
+// Navbar.jsx
 import React from "react";
 
-// height: 9.6rem;
-// padding: 0 4.8rem;
-// position: relative; for later header sticky
 function Navbar() {
   return (
-    <header className="flex justify-between bg-black text-white p-6 items-center">
-      <h1 className="font-logo text-xl  ml-8 text-blue">Harpreet Singh</h1>
-      <ul className="flex items-center gap-6 mr-8 text-lg">
-        <li className="font-medium  transition duration-300 ease-in-out hover:text-blue cursor-ponter">
-          Projects
-        </li>
-        <li className="font-medium  transition duration-300 ease-in-out hover:text-blue cursor-pointer ">
-          Bio
-        </li>
-        <li className="font-medium  transition duration-300 ease-in-out hover:text-blue cursor-pointer">
-          Contact
-        </li>
-      </ul>
+    <header className="navbar-container fixed top-0 left-0 w-full bg-black text-white p-6 z-50">
+      <nav className="flex justify-between items-center">
+        <h1 className="font-logo text-xl text-blue cursor-pointer">
+          <a href="#hero">Harpreet Singh</a>
+        </h1>
+        <ul className="flex gap-6 text-lg">
+          <li className="font-medium hover:text-blue">
+            <a href="#projects">Projects</a>
+          </li>
+          <li className="font-medium hover:text-blue">
+            <a href="#about">About Me</a>
+          </li>
+          <li className="font-medium hover:text-blue">
+            <a href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }

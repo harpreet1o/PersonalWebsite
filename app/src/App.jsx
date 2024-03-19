@@ -1,3 +1,5 @@
+// App.jsx
+import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
@@ -10,10 +12,18 @@ export default function App() {
   return (
     <div className="font-roboto">
       <Navbar />
-      <HeroSection />
-      <Projects />
-      <Biography />
-      <ContactUs />
+      <div id="hero">
+        <HeroSection />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="about">
+        <Biography />
+      </div>
+      <div id="contact">
+        <ContactUs />
+      </div>
       <Footer />
     </div>
   );
